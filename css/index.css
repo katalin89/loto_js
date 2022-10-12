@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.loto {
+    display: flex;
+    border: 2px solid red;
+
+    justify-content: center;
+
+    align-items: center;
+
+
+}
+
+.numere {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 2px solid red;
+   gap:10px;
+
+}
+
+
+input {
+    display: block;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 100px;
+
+    text-align: center;
+}
+
+.play{
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+    
+}
+
+button{
+    display: block;
+    width: 100px;
+    height: 40px;
+   
+}
+
+
+.fisa{
+
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px
+}
+
+.numere-generate{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px
+
+}
+
+.numere-castigatoare{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
