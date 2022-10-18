@@ -13,7 +13,6 @@ function insert(arr){
 
 function generare(){
     let numereContainer=document.querySelector(".numere-generate");
-    let clickPlay=document.querySelector(".play-button");
     numereContainer.innerHTML=createCard()
 }
 
@@ -25,13 +24,13 @@ function verificaUnicitate(arr) {
       if (arr[i] === arr[j]) {
         return false;
       }
-    }
-   
+    }   
   }
 
   return true;
 }
-//todo:functie ce verifica daca toate e;lementele vectorului sunt intre 1 si 49
+
+//todo:functie ce verifica daca toate elementele vectorului sunt intre 1 si 49
 
 function elementeIntre(arr){
     
@@ -57,8 +56,12 @@ function genereazaNumerele(){
    }
 
    return vector;
-
 }
+
+
+
+//sa apara numerele generate pe ecran
+
 //intoducem 6 numere
 // function numereAlese(){
 //   let container=document.querySelector(".box");
