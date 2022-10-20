@@ -4,6 +4,25 @@ let btnPlay = document.querySelector(".play");
 
 btnPlay.addEventListener("click", () => {
 
+  let container1=document.querySelector(".numere-generate");
+  container1.innerHTML = `<h1>Numere generate:</h1>
+  <input type="text" class="gen1" >
+  <input type="text" class="gen2" >
+  <input type="text" class="gen3" >
+  <input type="text" class="gen4" >
+  <input type="text" class="gen5" >
+  <input type="text" class="gen6" >
+`
+
+let container2=document.querySelector(".numere-castigatoare");
+container2.innerHTML = ` <h1>Numere castigatoare:</h1>
+<input type="text" class="castigator1" >
+<input type="text" class="castigator2" >
+<input type="text" class="castigator3" >
+<input type="text" class="castigator4" >
+<input type="text" class="castigator5" >
+<input type="text" class="castigator6" >
+`
   let nr1 = document.querySelector(".numar1");
   let nr2 = document.querySelector(".numar2");
   let nr3 = document.querySelector(".numar3");
@@ -17,6 +36,7 @@ btnPlay.addEventListener("click", () => {
   let castigator4 = document.querySelector(".castigator4");
   let castigator5 = document.querySelector(".castigator5");
   let castigator6 = document.querySelector(".castigator6");
+
   castigator1.value="";
   castigator2.value="";
   castigator3.value="";
@@ -59,8 +79,6 @@ btnPlay.addEventListener("click", () => {
   gen4.value = generated[3];
   gen5.value = generated[4];
   gen6.value = generated[5];
-
-
 
   if (esteCastigator(generated, nr1.value) ) castigator1.value=nr1.value; 
   if (esteCastigator(generated, nr2.value) ) castigator2.value=nr2.value; 

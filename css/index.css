@@ -66,12 +66,20 @@ button{
     align-items: center;
     justify-content: center;
     gap:10px
-
 }
 
-.numere-castigatoare{
+.numere-mele{
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap:10px
+}
+
+.numere-castigatoare{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px
 }
