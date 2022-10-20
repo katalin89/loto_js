@@ -58,6 +58,15 @@ function genereazaNumerele(){
    return vector;
 }
 
+function esteCastigator(arr, elem){
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]==elem){
+        return true;
+    }
+  }
+  return false;
+}
+
 
 
 //sa apara numerele generate pe ecran

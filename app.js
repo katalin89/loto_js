@@ -10,6 +10,19 @@ btnPlay.addEventListener("click", () => {
   let nr4 = document.querySelector(".numar4");
   let nr5 = document.querySelector(".numar5");
   let nr6 = document.querySelector(".numar6");
+
+  let castigator1 = document.querySelector(".castigator1");
+  let castigator2 = document.querySelector(".castigator2");
+  let castigator3 = document.querySelector(".castigator3");
+  let castigator4 = document.querySelector(".castigator4");
+  let castigator5 = document.querySelector(".castigator5");
+  let castigator6 = document.querySelector(".castigator6");
+  castigator1.value="";
+  castigator2.value="";
+  castigator3.value="";
+  castigator4.value="";
+  castigator5.value="";
+  castigator6.value="";
   
   let numere = [
     +nr1.value,
@@ -33,8 +46,30 @@ btnPlay.addEventListener("click", () => {
 
   let generated = genereazaNumerele();
   
-});
+  let gen1 = document.querySelector(".gen1");
+  let gen2 = document.querySelector(".gen2");
+  let gen3 = document.querySelector(".gen3");
+  let gen4 = document.querySelector(".gen4");
+  let gen5 = document.querySelector(".gen5");
+  let gen6 = document.querySelector(".gen6");
 
+  gen1.value = generated[0];
+  gen2.value = generated[1];
+  gen3.value = generated[2];
+  gen4.value = generated[3];
+  gen5.value = generated[4];
+  gen6.value = generated[5];
+
+
+
+  if (esteCastigator(generated, nr1.value) ) castigator1.value=nr1.value; 
+  if (esteCastigator(generated, nr2.value) ) castigator2.value=nr2.value; 
+  if (esteCastigator(generated, nr3.value) ) castigator3.value=nr3.value; 
+  if (esteCastigator(generated, nr4.value) ) castigator4.value=nr4.value; 
+  if (esteCastigator(generated, nr5.value) ) castigator5.value=nr5.value; 
+  if (esteCastigator(generated, nr6.value) ) castigator6.value=nr6.value; 
+
+});
 
 //sa genereze 6 numere care sa apara in container
 
